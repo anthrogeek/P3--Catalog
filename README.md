@@ -27,5 +27,6 @@ You can logout from the top right at any time
 - [Vagrant](http://vagrantup.com/)
 - [VirtualBox](https://www.virtualbox.org/)
 - [fullstack-nanodegree-vm repository](http://github.com/udacity/fullstack-nanodegree-vm)
+- [flask framework](http://flask.pocoo.org/)
 
 
