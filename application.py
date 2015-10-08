@@ -28,7 +28,6 @@ session = DBSession()
 # State token to prevent request forgery.
 # Stores it in session for later validation.
 
-@app.route('/')
 @app.route('/login')
 def showLogin():
     state = ''.join(random.choice(string.ascii_uppercase + string.
@@ -263,6 +262,7 @@ def singleMenuJSON(genre_id, book_id):
 
 
 # Shows a list of all genres available
+@app.route('/')
 @app.route('/allgenres/')
 def allGenreItems():
     genre = session.query(Genre).order_by(Genre.name)
@@ -270,6 +270,7 @@ def allGenreItems():
         return render_template('publicgenre.html', genre=genre)
     else:
         return render_template('allgenreitems.html', genre=genre)
+         
 
 # Shows all books in a particular genre category
 @app.route('/genre/<int:genre_id>/')
