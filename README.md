@@ -15,8 +15,12 @@ run vagrant up from the vagrant subdirectory in the rep. This assumes you have v
 SSH into the virtual machine using Vagrant SSH
 From the vagrant/oauth subfolder, run "python database.py". 
 Then run "python lotsofbooks.py" This will populate the database with some books
+<<<<<<< HEAD
 Finally run "python application.py" to start the application
 Open a browser to http://localhost:5000/login
+=======
+After you see "Running on http://0.0.0.0:5000/" in the shell, open a browser to http://localhost:5000
+>>>>>>> origin/master
 Login with your Google or Facebook account
 Once logged in, you'll be able to view the books and genres already on the site.
 You'll also be able to create new Genres and books and edit or delete your own genres and books
@@ -28,5 +32,6 @@ You can logout from the top right at any time
 - [Vagrant](http://vagrantup.com/)
 - [VirtualBox](https://www.virtualbox.org/)
 - [fullstack-nanodegree-vm repository](http://github.com/udacity/fullstack-nanodegree-vm)
+- [flask framework](http://flask.pocoo.org/)
 
 
